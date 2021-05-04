@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Menu, END, Label, LabelFrame, Button, RIDGE
 import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 from tkinter import filedialog
@@ -171,7 +171,7 @@ def send_feedback():
 window = tk.Tk()
 window.geometry('1000x500')
 window.title('notepad')
-window.iconbitmap('notepad.ico')
+# window.iconbitmap('notepad.ico')
 menubar = Menu(window)
 file = Menu(menubar, tearoff=0)
 file.add_command(label="New", command=new)
@@ -203,3 +203,4 @@ window.config(menu=menubar)
 text = ScrolledText(window, width=1000, height=1000)
 text.place(x=0, y=0)
 window.mainloop()
+
